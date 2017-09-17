@@ -27,6 +27,9 @@
                     <h1>Lifestyle</h1>
                     <p>Create your best-evet home with the latest trends in renovating, decorating and more.</p>
                     <a href="#">Find your inspiration</a>
+                    <aside>
+                        
+                    </aside>
                 </article>
                 <article>
                     <figure>
@@ -57,5 +60,10 @@
 
         </footer>
     </main>
+    <script>
+        var shadow = document.querySelector('aside').attachShadow({mode: 'open'});
+        // Add some text to shadow DOM
+        shadow.innerHTML = '<h1>Aside heading</h1><p>Test paragraph</p>';
+    </script>
 </body>
 </html>
